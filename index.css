@@ -79,12 +79,14 @@ body {
   }
   
 /* burgermenu (dropdown menu-punkterne) */  
-  .dropdown-content a {
+.dropdown-content {
     display: none;
-    position: absolute;
+    float: center;
     color: #19414A;
+}
+.dropdown-content a {
     font-weight: lighter;
-  }
+}
   
   .dropdown-content a:hover {
     color: #86B0B4;

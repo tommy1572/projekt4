@@ -7,5 +7,10 @@ function openNav() {
   }
 
   function openDropdown() {
-    document.getElementsByClassName("myDropdown").classList.toggle("show");
+    let dropdownContent = document.querySelector(".dropdown-content");
+    if (dropdownContent.style.display === "none") {
+        dropdownContent.style.display = "block";
+    } else{
+        dropdownContent.style.display = "none";
+    }
   }
