@@ -1,0 +1,95 @@
+body {
+    background-color: #EDF5F5;
+    height:100%;
+  }
+
+/* burgermenu */
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #EDF5F5;
+    background-color: #EDF5F5;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #19414A;
+    display: block;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #86B0B4;
+  }
+
+  .burger {
+    font-size: 40px;
+    color:#19414A;
+    float:right;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  /* burgermenu (dropdown knap "Min profil") */
+  .dropdown .dropbtn {
+    float: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-size: 36px;
+    color: #19414A;
+    background-color: #EDF5F5;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 14px 16px;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    color: #86B0B4;
+  }
+  
+/* burgermenu (kryds og lukke knap) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 50px;
+  }
+  
+/* burgermenu (dropdown menu-punkterne) */  
+  .dropdown-content a {
+    display: none;
+    position: absolute;
+    color: #19414A;
+    font-weight: lighter;
+  }
+  
+  .dropdown-content a:hover {
+    color: #86B0B4;
+  }
+
+  @media only screen and (min-height: 780px) {
+
+    }
