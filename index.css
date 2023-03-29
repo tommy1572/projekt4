@@ -95,3 +95,54 @@ body {
   @media only screen and (min-height: 780px) {
 
     }
+/* Footeren */
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #CCE1E0;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #1A444D;
+}
+.some{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.some li{
+  margin: 0 15px;
+}
+
+.some a{
+  text-decoration: none;
+  color: #fff;
+  background:#1A444D;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 50%;
+}   
+
+.fa {
+  padding: 40px;
+  font-size: 50px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.some a:hover {
+  background: #86B0B4;
+}
+
+.footer-tekst{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
