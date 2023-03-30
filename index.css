@@ -16,7 +16,7 @@ body {
     overflow-y: hidden;
     transition: 0.5s;
   }
-  
+
   .overlay-content {
     position: relative;
     top: 25%;
@@ -26,7 +26,7 @@ body {
     margin-bottom: 15px;
     padding: 20px;
   }
-  
+
   .overlay a {
     padding: 10px;
     text-decoration: none;
@@ -37,7 +37,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
   }
-  
+
   .overlay a:hover, .overlay a:focus {
     color: #86B0B4;
   }
@@ -78,7 +78,7 @@ body {
   .dropbtn:hover, .dropbtn:focus {
     color: #86B0B4;
   }
-  
+
 /* burgermenu (kryds og lukke knap) */
   .overlay .closebtn {
     position: absolute;
@@ -86,8 +86,8 @@ body {
     right: 15px;
     font-size: 50px;
   }
-  
-/* burgermenu (dropdown menu-punkterne) */  
+
+/* burgermenu (dropdown menu-punkterne) */
 .dropdown-content {
     margin-top: 5px;
     display: none;
@@ -97,7 +97,7 @@ body {
 .dropdown-content a {
     font-weight: lighter;
 }
-  
+
   .dropdown-content a:hover {
     color: #86B0B4;
   }
@@ -105,6 +105,54 @@ body {
   @media only screen and (min-height: 780px) {
 
     }
+
+    /* Mine oplysninger starter her*/
+    #mineoplysninger{
+      font-family: Helvetica Neue,Arial,sans-serif;
+      text-align: center;
+      color: #1A444D;
+      font-size: 40px;
+    }
+
+    form {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px;
+      border-color: #1A444D;
+      border-style: solid;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #DCEAEB;
+      border-radius: 10px;
+      font-family: Helvetica Neue,Arial,sans-serif;
+      color: #1A444D;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: normal;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select{
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: white;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      font-family: Helvetica Neue,Arial,sans-serif;
+    }
+
+
+    #contact-form{
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+      /* Mine oplysninger slutter her*/
+
 
 
 /* Footeren */
@@ -137,7 +185,7 @@ footer{
   padding: 20px;
   font-size: 20px;
   border-radius: 50%;
-}   
+}
 
 .fa fa-facebook {
   padding: 40px;
