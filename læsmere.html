@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <script src="læsmere.js" defer></script>
+        <script src="https://kit.fontawesome.com/31911ce4ba.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+          <header>
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="index.html">Forside</a>
+                <a href="arrangementer.html">Arrangementer</a>
+                <div class="dropdown">
+                  <button class="dropbtn" onclick="openDropdown()">Min profil
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content" class="myDropdown">
+                      <a href="minetilmeldinger.html">Mine tilmeldinger</a>
+                      <a href="mineoplysninger.html">Mine oplysninger</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="burger" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+          </header>
+            <div class="container">
+                <div class="box">
+                  <div class="dato-box">
+                    <p>29/03-23 <br> Kl. 19:00</p>
+                    <p>Adresse: Seebladsgade 1,<br> 5000 Odense C</p>
+                    <p>Pris: 20 kr</p>
+                  </div>
+                  <div class="beskrivelse-box">
+                    <p>Kom til verdens fedste fredagsbar på UCL! Der vil være masser af bajer fordi vi elsker bajer og det her er bare en test. Der både stå noget mere tekst så derfor skriver jeg lidt mere så det fylder og jeg aner ikke rigtig hvad der skal være på den her endnu, så jeg som sagt så skriver jeg bare en masse hahahah!</p>
+                    <button role="button">Tilmeld</button>
+                  </div>
+                </div>
+            </div>        
+        </main>
+        <footer>
+          <ul class="some">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+          </ul>
+          <div class="footer-tekst">UCL Seebladsgade 1</div>
+        </footer>
+    </body>
+</html>

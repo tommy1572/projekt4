@@ -153,7 +153,63 @@ body {
     }
       /* Mine oplysninger slutter her*/
 
+/* Læs mere boks*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
 
+.box {
+  width: 360px;
+  height: 140px;
+  background-color:#DCEAEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #79A1A5;
+}
+
+.dato-box {
+  width: 74px;
+  height: 140px;
+  border-right: 1px solid #79A1A5;
+}
+
+.dato-box p {
+  font-size: 10px;
+  padding-left: 3px;
+}
+
+.beskrivelse-box {
+  width: 286px;
+  height: 140px;
+}
+
+.beskrivelse-box p {
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+.beskrivelse-box button {
+  margin-top: 25px;
+  margin-right: 10px;
+  float: right;
+  background-color: #1A444D; 
+  color: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  border: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  transition: 220ms all ease-in-out;
+
+}
+
+.beskrivelse-box button:hover {
+  background-color: #79A1A5;
+}
 
 /* Footeren */
 footer{
