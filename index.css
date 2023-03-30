@@ -89,7 +89,7 @@ body {
   
 /* burgermenu (dropdown menu-punkterne) */  
 .dropdown-content {
-    margin-top: -35px;
+    margin-top: 5px;
     display: none;
     float: center;
     color: #19414A;
