@@ -3,7 +3,18 @@ body {
     height:100%;
   }
 
+/* logo */
+.logo {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
 /* burgermenu */
+
+.menubar {
+  display: none;
+  }
+
   .overlay {
     height: 0%;
     width: 100%;
@@ -271,4 +282,89 @@ footer{
   align-items: center;
   justify-content: center;
   padding: 10px;
+}
+
+/* menubar */
+@media only screen and (min-width: 950px) {
+
+  .overlay {
+  display: none;
+  }
+
+  .burger {
+  display: none;
+  }
+
+  .menubar {
+  display: block;
+  margin-top: -65px;
+  margin-right: 20px;
+  overflow: hidden;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+  }
+
+  .menubar a{
+  font-size: 25px;
+  color: #19414A;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  }
+
+  .menudropdown{
+  float: right;
+  overflow: hidden;
+  }
+    
+  .menudropdown .menudropbtn{
+  cursor: pointer;
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: #19414A;
+  background-color: #EDF5F5;
+  padding: 14px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  order: 0;
+  }
+  
+  .menubar a:hover, .menudropdown:hover .menudropbtn, .menudropbtn:focus {
+  color: #86B0B4;
+  }
+      
+  .menudropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #EDF5F5;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+    
+  .menudropdown-content a {
+  float: none;
+  color: #19414A;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-weight: lighter;
+  }
+    
+  .dropdown-content a:hover {
+  background-color: #EDF5F5;
+  }
+  
+  .show {
+  display: block;
+  }
+
+  .show {
+      display: block;
+      }
 }
