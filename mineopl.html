@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/31911ce4ba.js" crossorigin="anonymous"></script>
+    <title>Mine oplysninger</title>
+  </head>
+  <body>
+
+    <header>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="index.html">Forside</a>
+                  <a href="arrangementer.html">Arrangementer</a>
+                  <div class="dropdown">
+                    <button class="dropbtn" onclick="openDropdown()">Min profil
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" class="myDropdown">
+                        <a href="minetilmeldinger.html">Mine tilmeldinger</a>
+                        <a href="mineoplysninger.html">Mine oplysninger</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="burger" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+    </header>
+    <main>
+    </main>
+    <footer>
+      <ul class="some">
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+      </ul>
+      <div class="footer-tekst">UCL Seebladsgade 1</div>
+    </footer>
+
+
+    <h1 id="mineoplysninger">MINE OPLYSNINGER</h1>
+    <form id="contact-form">
+
+      <label for="navn">Navn:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="uddannelse">Uddannelse:</label>
+      <select id="uddannelse" name="uddannelse">
+        <option value="Uddannelse">Uddannelse</option>
+        <option value="Automationsteknolog">Automationsteknolog</option>
+        <option value="Autoteknolog">Autoteknolog</option>
+        <option value="Byggekoordinator">Byggekoordinator</option>
+        <option value="Datamatiker">Datamatiker</option>
+        <option value="El-installatør">El-installatør</option>
+        <option value="Finansøkonom">Finansøkonom</option>
+        <option value="Financial controller">Financial controller</option>
+        <option value="Handelsøkonom">Handelsøkonom</option>
+        <option value="IT-teknolog">IT-teknolog</option>
+        <option value="Jordbrugsteknolog">Jordbrugsteknolog</option>
+        <option value="Laborant">Laborant</option>
+        <option value="Markedsføringsøkonom">Markedsføringsøkonom</option>
+        <option value="Multimediedesigner">Multimediedesigner</option>
+        <option value="Produktionsteknolog">Produktionsteknolog</option>
+        <option value="Procesteknolog">Procesteknolog</option>
+        <option value="Serviceøkonom">Serviceøkonom</option>
+        <option value="Sundhedsadministrativ koordinator">Sundhedsadministrativ koordinator</option>
+        <option value="VVS-installatør">VVS-installatør</option>
+      </select>
+
+      <label for="semester">Semester:</label>
+      <select id="semester" name="semester">
+        <option value="Semester">Semester</option>
+        <option value="1. semester">1. semester</option>
+        <option value="2. semester">2. semester</option>
+        <option value="3. semester">3. semester</option>
+        <option value="4. semester">4. semester</option>
+        <option value="5. semester">5. semester</option>
+        <option value="6. semester">6. semester</option>
+      </select>
+
+
+    </form>
+  </body>
+</html>
