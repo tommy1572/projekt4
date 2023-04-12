@@ -10,23 +10,42 @@
     <body>
         <main>
           <header>
-            <div id="myNav" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content">
+            <!-- Logo -->
+            <div class="logo">
+              <img src="Billeder/ucleventslogo.png" alt="UCL events logo" width="95.8px" height="65.9px">
+              </div>
+                  <div id="myNav" class="overlay">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <div class="overlay-content">
+                        <a href="index.html">Forside</a>
+                        <a href="arrangementer.html">Arrangementer</a>
+                        <div class="dropdown">
+                          <button class="dropbtn" onclick="openDropdown()">Min profil
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-content" class="myDropdown">
+                              <a href="minetilmeldinger.html">Mine tilmeldinger</a>
+                              <a href="mineopl.html">Mine oplysninger</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="burger" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+          
+              <!-- Menubar til web -->
+              <div class="menubar"> 
                 <a href="index.html">Forside</a>
                 <a href="arrangementer.html">Arrangementer</a>
-                <div class="dropdown">
-                  <button class="dropbtn" onclick="openDropdown()">Min profil
+                <div class="menudropdown">
+                  <button class="menudropbtn" onclick="openMenuDropdown()">Min profil
                     <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content" class="myDropdown">
+                </button>
+                  <div class="menudropdown-content" class="menuMydropdown">
                       <a href="minetilmeldinger.html">Mine tilmeldinger</a>
                       <a href="mineoplysninger.html">Mine oplysninger</a>
                   </div>
                 </div>
-              </div>
-            </div>
-            <span class="burger" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+              </div>  
           </header>
             <div class="container">
                 <div class="box">
