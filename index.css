@@ -5,24 +5,28 @@ body {
 
 /* logo */
 .logo {
-  margin-top: 20px;
-  margin-left: 10px;
+margin-top: -90px;
+margin-left: 10px;
 }
 
-/* burgermenu */
+.line {
+  background-color: #CCE1E0;
+  max-width: 100%;
+  padding: 55px;
+}
 
+/* burgermenu */ 
 .menubar {
-  display: none;
-  }
+display: none;
+}
 
-  .overlay {
+.overlay {
     height: 0%;
     width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #EDF5F5;
     background-color: #EDF5F5;
     overflow-y: hidden;
     transition: 0.5s;
@@ -33,7 +37,7 @@ body {
     top: 25%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 15px;
     padding: 20px;
   }
@@ -113,9 +117,205 @@ body {
     color: #86B0B4;
   }
 
-  @media only screen and (min-height: 780px) {
-
+     /* galleri */ 
+     body {font-family: Arial, Helvetica, sans-serif;}
+     .mySlides {display: none;}
+    
+    .billede {
+      width: 100%;
     }
+    
+    .slideshow-container {
+        max-width: 80%;
+        position: relative;
+        padding-top: 30px;
+        margin: auto;
+      }
+    
+     /* prikkerne under billedet */
+     .prik {
+       height: 15px;
+       width: 15px;
+       margin: 0 2px;
+       background-color: #638E96;
+       border-radius: 50%;
+       display: inline-block;
+       transition: background-color 1s ease-in-out;
+     }
+     
+     .active {
+       background-color: #1A444D;
+     }
+     
+     /* fade animation */
+     .fade {
+       animation-name: fade;
+       animation-duration: 5s;
+     }
+     
+     @keyframes fade {
+       from {opacity: .4} 
+       to {opacity: 1}
+     }
+
+    .ugensarrangementer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #1A444D;
+    font-size: 20px;
+    margin-top: 50px;
+    }
+
+    .dato {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      color: #79A1A5;
+      font-size: 18px;
+      margin-bottom: 50px;
+      font-weight: bold;
+      }
+
+    .line2 {
+      background-color: #CCE1E0;
+      width: 100%;
+      margin-top: 50px;
+      padding: 2px;
+    }
+
+/*karrusel*/
+body {font-family: Arial, Helvetica, sans-serif; margin:0;}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.karrusel-container {
+  max-width: 300%;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.karrusel-container:hover {
+  opacity: 0.7;
+}
+
+#billedegalleribaggrund{
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-top: 20px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  color: #19414A;
+  font-weight: bold;
+  font-size: 40px;  
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  color: #86B0B4;
+}
+
+/* Caption text */
+.text {
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px #1A444D;
+  font-size: 25px;
+  padding: 8px 8px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #1A444D;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+}
+
+/* Footeren */
+footer{
+  position: inherit;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #CCE1E0;
+  height: auto;
+  width: 100vw;
+  padding-top: 20px;
+  color: #1A444D;
+  margin-top: 220px;
+}
+
+.some{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.some li{
+  margin: 0 15px;
+}
+
+.some a{
+  text-decoration: none;
+  color: #fff;
+  background:#1A444D;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.fa fa-facebook {
+  padding: 40px;
+  font-size: 50px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa fa-instagram {
+  padding: 40px;
+  font-size: 50px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.some a:hover {
+  background: #86B0B4;
+}
+
+.footer-tekst{
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
 
     /* Mine oplysninger starter her*/
     #mineoplysninger{
@@ -222,145 +422,163 @@ body {
   background-color: #79A1A5;
 }
 
-/* Footeren */
-footer{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #CCE1E0;
-  height: auto;
-  width: 100vw;
-  padding-top: 40px;
-  color: #1A444D;
-}
-.some{
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media only screen and (min-width: 650px) {
+  .ugensarrangementer {
+    font-size: 30px;
+  }
 
-}
-.some li{
-  margin: 0 15px;
-}
+  .text {
+    font-size: 40px;
+    bottom: 100px;
+  }
 
-.some a{
-  text-decoration: none;
-  color: #fff;
-  background:#1A444D;
-  padding: 20px;
-  font-size: 20px;
-  border-radius: 50%;
+  .dato {
+    font-size: 25px;
+    }
+
+    .prev, .next {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+  .karrusel-container {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+  }
+
+  footer{
+    margin-top: 100px;
+  }
 }
 
-.fa fa-facebook {
-  padding: 40px;
-  font-size: 50px;
-  width: 25px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa fa-instagram {
-  padding: 40px;
-  font-size: 50px;
-  width: 25px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.some a:hover {
-  background: #86B0B4;
-}
-
-.footer-tekst{
-  display: flex;
-  margin-left: 30px;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-
-/* menubar */
 @media only screen and (min-width: 950px) {
 
-  .overlay {
-  display: none;
-  }
+  /* menubar */
+    .overlay {
+    display: none;
+    }
 
-  .burger {
-  display: none;
-  }
+    .burger {
+    display: none;
+    }
 
-  .menubar {
-  display: block;
-  margin-top: -65px;
-  margin-right: 20px;
-  overflow: hidden;
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  float: right;
-  }
+    .menubar {
+    display: block;
+    margin-top: -80px;
+    margin-right: 20px;
+    overflow: hidden;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    }
 
-  .menubar a{
-  font-size: 25px;
-  color: #19414A;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  }
+    .menubar a{
+    font-size: 25px;
+    color: #19414A;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    }
 
-  .menudropdown{
-  float: right;
-  overflow: hidden;
-  }
-    
-  .menudropdown .menudropbtn{
-  cursor: pointer;
-  font-size: 25px;  
-  border: none;
-  outline: none;
-  color: #19414A;
-  background-color: #EDF5F5;
-  padding: 14px 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  order: 0;
-  }
-  
-  .menubar a:hover, .menudropdown:hover .menudropbtn, .menudropbtn:focus {
-  color: #86B0B4;
-  }
+    .menudropdown{
+    float: right;
+    overflow: hidden;
+    }
       
-  .menudropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #EDF5F5;
-  min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  }
+    .menudropdown .menudropbtn{
+    cursor: pointer;
+    font-size: 25px;  
+    border: none;
+    outline: none;
+    color: #19414A;
+    background-color: #CCE1E0;
+    padding: 14px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    order: 0;
+    }
     
-  .menudropdown-content a {
-  float: none;
-  color: #19414A;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  font-weight: lighter;
-  }
+    .menubar a:hover, .menudropdown:hover .menudropbtn, .menudropbtn:focus {
+    color: #86B0B4;
+    }
+        
+    .menudropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EDF5F5;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+      
+    .menudropdown-content a {
+    float: none;
+    color: #19414A;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+    }
+      
+    .dropdown-content a:hover {
+    background-color: #EDF5F5;
+    }
     
-  .dropdown-content a:hover {
-  background-color: #EDF5F5;
+    .show {
+    display: block;
+    }
+
+      /* menubar slut */
+
+    .ugensarrangementer {
+      font-size: 40px;
+    }
+
+    .text {
+      font-size: 60px;
+      bottom: 130px;
+    }
+
+    .dato {
+      font-size: 30px;
+      }
+
+    .prev, .next {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+
+    .ugensarrangementer {
+      margin-top: 80px;
+    }
+
+    .karrusel-container {
+      max-width: 80%;
+      position: relative;
+      margin: auto;
+    }
+
   }
-  
-  .show {
-  display: block;
+
+  @media only screen and (min-width: 1300px) {
+
+    .prev, .next {
+      margin-left: 300px;
+      margin-right: 300px;
+    }
+
+    .text {
+      font-size: 60px;
+      bottom: 130px;
+    }
+
+    .karrusel-container {
+      max-width: 60%;
+      position: relative;
+      margin: auto;
+    }
   }
-}
