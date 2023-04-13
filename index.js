@@ -2,7 +2,7 @@
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
   }
-  
+
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
@@ -35,20 +35,20 @@ function kørSlide() {
   let slides = document.getElementsByClassName("billedeslide");
   let prikker = document.getElementsByClassName("prik");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideShow++;
-  if (slideShow > slides.length) {slideShow = 1}    
+  if (slideShow > slides.length) {slideShow = 1}
   for (i = 0; i < prikker.length; i++) {
     prikker[i].className = prikker[i].className.replace(" active", "");
   }
-  slides[slideShow-1].style.display = "block";  
+  slides[slideShow-1].style.display = "block";
   prikker[slideShow-1].className += " active";
   setTimeout(kørSlide, 4000); // skift ved 4 sek
 }
 
 function changeColor(element, color) {
-  element.style.backgroundColor = color; 
+  element.style.backgroundColor = color;
 }
 // galleri slut
 
