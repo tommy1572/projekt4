@@ -1,0 +1,370 @@
+body {
+    background-color: #EDF5F5;
+    height:100%;
+  }
+
+/* logo */
+.logo {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+/* burgermenu */
+
+.menubar {
+  display: none;
+  }
+
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #EDF5F5;
+    background-color: #EDF5F5;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 20px;
+  }
+
+  .overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #19414A;
+    display: block;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #86B0B4;
+  }
+
+  .burger {
+    font-size: 40px;
+    color:#19414A;
+    float:right;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+
+  /* burgermenu (dropdown knap "Min profil") */
+  .dropdown .dropbtn {
+    float: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-size: 36px;
+    color: #19414A;
+    background-color: #EDF5F5;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  .dropbtn i {
+    padding-left: 10px;
+  }
+
+  .dropbtn {
+    margin-top: 20px;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    color: #86B0B4;
+  }
+
+/* burgermenu (kryds og lukke knap) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    font-size: 50px;
+  }
+
+/* burgermenu (dropdown menu-punkterne) */
+.dropdown-content {
+    margin-top: 5px;
+    display: none;
+    float: center;
+    color: #19414A;
+}
+.dropdown-content a {
+    font-weight: lighter;
+}
+
+  .dropdown-content a:hover {
+    color: #86B0B4;
+  }
+
+  @media only screen and (min-height: 780px) {
+
+    }
+
+    /* Mine oplysninger starter her*/
+    #mineoplysninger{
+      font-family: Helvetica Neue,Arial,sans-serif;
+      text-align: center;
+      color: #1A444D;
+      font-size: 40px;
+    }
+
+    form {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px;
+      border-color: #1A444D;
+      border-style: solid;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #DCEAEB;
+      border-radius: 10px;
+      font-family: Helvetica Neue,Arial,sans-serif;
+      color: #1A444D;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: normal;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select{
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: white;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      font-family: Helvetica Neue,Arial,sans-serif;
+    }
+
+
+    #contact-form{
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+      /* Mine oplysninger slutter her*/
+
+/* Læs mere boks*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.box {
+  width: 360px;
+  height: 140px;
+  background-color:#DCEAEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #79A1A5;
+}
+
+.dato-box {
+  width: 74px;
+  height: 140px;
+  border-right: 1px solid #79A1A5;
+}
+
+.dato-box p {
+  font-size: 10px;
+  padding-left: 3px;
+}
+
+.beskrivelse-box {
+  width: 286px;
+  height: 140px;
+}
+
+.beskrivelse-box p {
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+.beskrivelse-box button {
+  margin-top: 25px;
+  margin-right: 10px;
+  float: right;
+  background-color: #1A444D; 
+  color: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  border: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  transition: 220ms all ease-in-out;
+
+}
+
+.beskrivelse-box button:hover {
+  background-color: #79A1A5;
+}
+
+/* Footeren */
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #CCE1E0;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #1A444D;
+}
+.some{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.some li{
+  margin: 0 15px;
+}
+
+.some a{
+  text-decoration: none;
+  color: #fff;
+  background:#1A444D;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.fa fa-facebook {
+  padding: 40px;
+  font-size: 50px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa fa-instagram {
+  padding: 40px;
+  font-size: 50px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.some a:hover {
+  background: #86B0B4;
+}
+
+.footer-tekst{
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* menubar */
+@media only screen and (min-width: 950px) {
+
+  .overlay {
+  display: none;
+  }
+
+  .burger {
+  display: none;
+  }
+
+  .menubar {
+  display: block;
+  margin-top: -65px;
+  margin-right: 20px;
+  overflow: hidden;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+  }
+
+  .menubar a{
+  font-size: 25px;
+  color: #19414A;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  }
+
+  .menudropdown{
+  float: right;
+  overflow: hidden;
+  }
+    
+  .menudropdown .menudropbtn{
+  cursor: pointer;
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: #19414A;
+  background-color: #EDF5F5;
+  padding: 14px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  order: 0;
+  }
+  
+  .menubar a:hover, .menudropdown:hover .menudropbtn, .menudropbtn:focus {
+  color: #86B0B4;
+  }
+      
+  .menudropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #EDF5F5;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+    
+  .menudropdown-content a {
+  float: none;
+  color: #19414A;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-weight: lighter;
+  }
+    
+  .dropdown-content a:hover {
+  background-color: #EDF5F5;
+  }
+  
+  .show {
+  display: block;
+  }
+
+  .show {
+      display: block;
+      }
+}
