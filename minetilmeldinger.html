@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js" defer></script>
+        <script src="https://kit.fontawesome.com/31911ce4ba.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/31911ce4ba.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/31911ce4ba.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body>
+      <header>
+
+        <div class="line">
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="Billeder/ucleventslogo.png" alt="UCL events logo" width="119.75px" height="82.375px">
+        </div>
+
+        <!-- Burgermenu -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+            <div class="overlay-content"> 
+              <a href="index.html">Forside</a>
+              <a href="kommendearrangementer.html">Arrangementer</a>
+              <div class="dropdown">
+                <button class="dropbtn" onclick="openDropdown()">Min profil
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" class="myDropdown">
+                    <a href="minetilmeldinger.html">Mine tilmeldinger</a>
+                    <a href="mineopl.html">Mine oplysninger</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="burger" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <!-- Menubar til web -->
+        <div class="menubar"> 
+            <a href="index.html">Forside</a>
+            <a href="kommendearrangementer.html">Arrangementer</a>
+            <div class="menudropdown">
+              <button class="menudropbtn" onclick="openMenuDropdown()">Min profil
+                <i class="fa fa-caret-down"></i>
+            </button>
+              <div class="menudropdown-content" class="menuMydropdown">
+                  <a href="minetilmeldinger.html">Mine tilmeldinger</a>
+                  <a href="mineopl.html">Mine oplysninger</a>
+              </div>
+            </div>
+          </div>
+
+    </header>
+    <main>
+        <div id="container_margin" class="container-event">
+            <h1 class="title"> MINE TILMELDNINGER</h1>
+            <div class="content_container_left">
+              <div class="left-content-leftbox">
+                <div>
+                  <h1 class="inline">BRÆTSPILSCAFE D. 11. APRIL</h1>
+                  <a href="#" class="inline piMindBtn-right">PÅMIND MIG<span class="material-symbols-outlined bell-icon inline">notifications_active</span></a>
+                </div>
+        
+                <p>Tag en studiekammeret i hånden og deltag i den hyggeligste brætspilscafe på 
+                    UCL Seebladsgade. Her får du mulighed for at koble fra studiet og lektier, 
+                    og se dine venner i øjnene. Brætspil er en fantastisk måde at være sammen med 
+                    venner på. Om det skal være med fokus på samarbejde om en fælles sejr i Partners 
+                    eller Bezzerwizzer, eller at give dine studiekammerater tæv og tage æren for dig 
+                    selv i et spil Ludo, Uno, Backgammon eller andre sjove spil, som skolen stiller til 
+                    rådighed.
+                </p>
+                <div class="left-content-leftbox-counter">
+                  <div class="floating_footer" id="Timer1">
+        
+                  </div>
+                </div>
+              </div>
+              <div class="left-content-rightbox">
+                <img src="billeder/scrabble.jpg" height="400px" width="400px" alt="">
+              </div>
+            </div>
+        
+          </div>
+          <div class="container-event">
+        
+            <div class="content_container_right">
+              <div class="left-content-rightbox">
+                <img class="event-img" src="billeder/badmintonspil.jpg" height="400px" width="400px" alt="">
+              </div>
+              <div class="left-content-leftbox">
+                <div>
+                  <h1 class="inline">BADMINTION KLUBBEN D. 13. APRIL</h1>
+                  <a href="#" class="inline piMindBtn-right">PÅMIND MIG<span class="material-symbols-outlined bell-icon inline">notifications_active</span></a>
+                </div>
+                <p>Badmintonstjerne eller ej? UCL’s badmintonklub er åben for alle niveauer på badmintonbanen. 
+                    Det handler om at have det sjovt! Gruppen, af studerende fra UCL, er på tværs af 
+                    uddannelserne, og der mødes og spilles lidt fjer to gange om ugen. For at være med, 
+                    skal man svare på to spørgsmål, når man ansøger gruppen. Dette er for at bekræfte, 
+                    at man er studerende på UCL. Træning er tirsdag og torsdag fra kl. 19-21 ude i 
+                    Videnbyen (Cortex Park 26, 5230 Odense). 
+                </p>
+                <div class="left-content-leftbox-counter">
+                  <div class="floating_footer" id="Timer2">
+        
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+          <div id="container_margin" class="container-event">
+            <div class="content_container_left">
+              <div class="left-content-leftbox">
+                <div>
+                  <h1 class="inline">FREDAGSBAR D. 14. APRIL</h1>
+                  <a href="#" class="inline piMindBtn-right">PÅMIND MIG<span class="material-symbols-outlined bell-icon inline">notifications_active</span></a>
+                </div>
+                <p>Har du brug for en slapper efter en lang uge med studie og lektier? 
+                    Når BeerBox, på Seebladsgade, slår dørene op for den ugentlige Fredagsbar, 
+                    er det en perfekt mulighed, for få en snak med studiekammeraterne uden 
+                    for klasselokalet og lærer dem bedre at kende over en øl eller to. Vi kan 
+                    tilbyde jer øl, drinks og en masse sjov i form af konkurrencer, beerpong, 
+                    bordfodbold og meget mere. Håber vi ses på fredag, fra klokken 12!
+                </p>
+                <div class="left-content-leftbox-counter">
+                  <div class="floating_footer" id="Timer3">
+        
+                  </div>
+                </div>
+              </div>
+              <div class="left-content-rightbox">
+                <img src="billeder/olfredagsbar.jpg" height="400px" width="400px" alt="">
+              </div>
+            </div>
+        
+          </div>
+          <div class="container-event">
+        
+            <div class="content_container_right">
+              <div class="left-content-rightbox">
+                <img class="event-img" src="billeder/soccergoal.jpg" height="400px" width="400px" alt="">
+              </div>
+              <div class="left-content-leftbox">
+                <div>
+                  <h1 class="inline">UCL FC D. 19. APRIL</h1>
+                  <a href="#" class="inline piMindBtn-right">PÅMIND MIG<span class="material-symbols-outlined bell-icon inline">notifications_active</span></a>
+                </div>
+                <p>UCL FC er UCL's helt eget fodboldhold for både mænd og kvinder. 
+                    Herrerne spiller i serie 3 og kvinderne 7 mands. Det er en social 
+                    og hyggelig klub, som primært er tiltænkt studerende på UCL, men der er 
+                    plads til alle, også selvom man ikke er fra UCL, og ikke har de store 
+                    fodboldevner. UCL FC handler om at være fysisk aktiv i sjove og kreative rammer, 
+                    og om at mødes på kryds og tværs af studier og årgange.
+                </p>
+                <div class="left-content-leftbox-counter">
+                  <div class="floating_footer" id="Timer4">
+        
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+      </main>
+        <footer>
+          <ul class="some">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+          </ul>
+          <div class="footer-tekst">UCL Seebladsgade 1</div>
+        </footer>
+    </body>
+</html>
