@@ -83,7 +83,7 @@ function showSlides(n) {
 // karrusel slut
 
 // pop-up starter
-const popOutButton = document.getElementById("button"); 
+const popOutButton = document.getElementById("button");
 const bg_container = document.querySelector("bgpopContainer");
 const exitPopUp = document.getElementById("bg_container");
 
@@ -135,28 +135,37 @@ function exitPage(event) {
         }
     });
   });
-  
+
   //timer slutter her
 
-//kontakt form starter her
+  //kontaktform starter her
 
-select_element = document.getElementById("semester");
-let sprog = ["1. semester", "2. semester", "3. semester", "4. semester", "5. semester", "6. semester"];
+    select_element = document.getElementById("semSelect");
+    let sem = ["1. semester", "2. semester", "3. semester", "4. semester", "5. semester", "6. semester"];
 
-  // Udvider option-boks baseret på antal sprog i array'et
-  for (let i=0; i < sprog.length; i++) {
-    let opt = sprog[i];
+
+    // Udvider option-boks baseret på antal semestre i array'et
+    for (let i=0; i < sem.length; i++) {
+    let opt = sem[i];
     select_element.innerHTML += "<option value=\" "+ opt +"\">"+ opt + "</option";
     }
-  
-    document.getElementById("semester").onchange = function(){
-    if (document.getElementById("semester").value == ' semester')
-    location.replace('index.html');
-    else if (document.getElementById("semester").value == ' semester')
-    location.replace('indexEn.html');
-    else
-    location.replace('indexDe.html')
-    }
-    document.getElementById("semester").selectedIndex = 1;
 
-//kontakt form slutter her
+    document.getElementById("semSelect").onchange = function(){
+    if (document.getElementById("semSelect").value == '1. semester')
+    location.replace('mineopl.html');
+    else if (document.getElementById("semSelect").value == '2. semester')
+    location.replace('mineopl.html');
+    else if (document.getElementById("semSelect").value == '3. semester')
+    location.replace('mineopl.html');
+    else if (document.getElementById("semSelect").value == '4. semester')
+    location.replace('mineopl.html');
+    else if (document.getElementById("semSelect").value == '5. semester')
+    location.replace('mineopl.html');
+    else if (document.getElementById("semSelect").value == '6. semester')
+    location.replace('mineopl.html');
+    else
+    location.replace('mineopl.html')
+    }
+    document.getElementById("semSelect").selectedIndex = 1;
+
+  //kontaktform starter her
