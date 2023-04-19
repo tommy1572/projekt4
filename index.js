@@ -1,4 +1,37 @@
-/* Burgermenu */
+// pop-up starter (Emilie)
+
+const popOutButton = document.getElementById("button"); 
+const bg_container = document.querySelector("bgpopContainer");
+const exitPopUp = document.getElementById("bg_container");
+
+popOutButton.addEventListener("click", popOutNow);
+document.addEventListener("mouseout", exitPage);
+
+function popOutNow(e) {
+    e.preventDefault();
+    document.querySelector(".bgpopContainer").style.display = "flex";
+    document.querySelector(".pop-box").style.display = "block";
+}
+
+const cancelPop = document.getElementById("close");
+
+cancelPop.addEventListener("click", cancelPopOut)
+
+function cancelPopOut(e) {
+    e.preventDefault();
+    document.querySelector(".bgpopContainer").style.display = "none";
+}
+
+function exitPage(event) {
+    if (event.clientY < 50) {
+        document.removeEventListener("mouseout", exitPage);
+        exitPopUp.style.display = "flex";
+    }
+}
+
+// pop-up slut
+
+/* Burgermenu (Emilie)*/
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
   }
@@ -16,7 +49,7 @@
     }
   }
 
-/* Menubar web */
+/* Menubar web (Emilie) */
   function openMenuDropdown() {
     let dropdownContent = document.querySelector(".menudropdown-content");
     if (dropdownContent.style.display === "none") {
@@ -26,7 +59,7 @@
     }
   }
 
-  // Galleri
+  // Galleri (Emilie)
 let slideShow = 0;
 kørSlide();
 
@@ -52,7 +85,7 @@ function changeColor(element, color) {
 }
 // galleri slut
 
-// karrusel
+// karrusel (Emilie)
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -82,37 +115,7 @@ function showSlides(n) {
 
 // karrusel slut
 
-// pop-up starter
-const popOutButton = document.getElementById("button");
-const bg_container = document.querySelector("bgpopContainer");
-const exitPopUp = document.getElementById("bg_container");
-
-popOutButton.addEventListener("click", popOutNow);
-document.addEventListener("mouseout", exitPage);
-
-function popOutNow(e) {
-    e.preventDefault();
-    document.querySelector(".bgpopContainer").style.display = "flex";
-}
-
-const cancelPop = document.getElementById("close");
-
-cancelPop.addEventListener("click", cancelPopOut)
-
-function cancelPopOut(e) {
-    e.preventDefault();
-    document.querySelector(".bgpopContainer").style.display = "none";
-}
-
-function exitPage(event) {
-    if (event.clientY < 50) {
-        document.removeEventListener("mouseout", exitPage);
-        exitPopUp.style.display = "flex";
-    }
-}
-// pop-up slut
-
-  //timer starter her
+  //timer starter her (Abdi)
 
   var timers = [
     [new Date("April 30, 2023 15:37:25").getTime(), 'Timer1'],
@@ -138,7 +141,7 @@ function exitPage(event) {
 
   //timer slutter her
 
-  //kontaktform starter her
+  //kontaktform starter her (Johanna)
 
     select_element = document.getElementById("semSelect");
     let sem = ["1. semester", "2. semester", "3. semester", "4. semester", "5. semester", "6. semester"];
