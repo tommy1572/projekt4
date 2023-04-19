@@ -180,8 +180,6 @@ function increaseCount() {
   document.querySelector('.heart-btn').style.color = 'red';
 }
 /*hjerte SLUT*/
-<<<<<<< Updated upstream
-=======
 
 /*læs mere karrusel START */
 var billedeIndex = 1;
@@ -203,4 +201,3 @@ function visKarrusel(n) {
 }
 
 /*læs mere karrusel SLUT */
->>>>>>> Stashed changes
