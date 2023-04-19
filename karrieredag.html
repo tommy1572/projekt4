@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>karrieredag</title>
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <script src="index.js" defer></script>
+        <script src="https://kit.fontawesome.com/31911ce4ba.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+     
+          <div class="line">
+          </div>
+  
+          <!-- Logo -->
+          <div class="logo">
+              <img src="Billeder/UCLeventslogo.png" alt="UCL events logo" width="119.75px" height="82.375px">
+          </div>
+  
+          <!-- Burgermenu -->
+          <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+              <div class="overlay-content"> 
+                <a href="index.html">Forside</a>
+                <a href="arrangementer.html">Arrangementer</a>
+                <div class="dropdown">
+                  <button class="dropbtn" onclick="openDropdown()">Min profil
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content" class="myDropdown">
+                      <a href="minetilmeldinger.html">Mine tilmeldinger</a>
+                      <a href="mineoplysninger.html">Mine oplysninger</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="burger" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+  
+          <!-- Menubar til web -->
+          <div class="menubar"> 
+              <a href="index.html">Forside</a>
+              <a href="arrangementer.html">Arrangementer</a>
+              <div class="menudropdown">
+                <button class="menudropbtn" onclick="openMenuDropdown()">Min profil
+                  <i class="fa fa-caret-down"></i>
+              </button>
+                <div class="menudropdown-content" class="menuMydropdown">
+                    <a href="minetilmeldinger.html">Mine tilmeldinger</a>
+                    <a href="mineoplysninger.html">Mine oplysninger</a>
+                </div>
+              </div>
+            </div> 
+          </header>
+          <main>
+            <h1 id="mineoplysninger">Karrieredag</h1>
+            <div class="container">
+                <div class="læsmere-box">
+                  <div class="dato-box">
+                    <p>11/04-23 <br> Kl. 14:00</p>
+                    <p>Adresse: Campus Seebladsgade 1,<br> 5000 Odense C</p>
+                    <p>Lokale: Kantinen</p>
+                    <p>Pris: Gratis</p>
+                  </div>
+                  <div class="beskrivelse-box">
+                    <p>Er du interesseret i at lære spændende virksomheder bedre at kende, finde en mulig praktikplads og undersøge dine muligheder på arbejdsmarkedet efter endt uddannelse. Så er karrieredag noget for dig! Der tilbydes over 100 virksomheder, som kan besøges på UCL. Et lille tip er at print et CV ud og medbringe dette til virksomheder, som vi ønsker skal vende tilbage til dig ved interesse. 
+                    </p>
+                    <div id="ikoner">
+                     <div class="deltager">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>32</span>
+                      </div>
+                      <button class="heart-btn" onclick="increaseCount()">
+                        <i class="fas fa-heart"></i>
+                        <span id="count" class="counter">0</span>
+                      </button>
+                      <button class="tilmeld-knap" role="button">Tilmeld</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="karrusel-container">
+              <div class="minBilleder">
+                <img src="læsmere-billeder/kdag1.jpg">
+              </div>
+              <div class="minBilleder">
+                <img src="læsmere-billeder/kdag2.jpg">
+              </div>
+              <div class="minBilleder">
+                <img src="læsmere-billeder/kdag3.jpg">
+              </div>
+              <a class="forrige" onclick="plusKarrusel(-1)">&#10094;</a>
+              <a class="naeste" onclick="plusKarrusel(1)">&#10095;</a>
+            </div>       
+        </main>
+        <footer>
+        <div class="footer">    
+          <ul class="some">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+          </ul>
+        </div>
+          <div class="footer-tekst">
+            <p>UCL Seebladsgade 1</p>
+            </div>
+        </footer>
+    </body>
+</html>

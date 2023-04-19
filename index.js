@@ -180,3 +180,27 @@ function increaseCount() {
   document.querySelector('.heart-btn').style.color = 'red';
 }
 /*hjerte SLUT*/
+<<<<<<< Updated upstream
+=======
+
+/*læs mere karrusel START */
+var billedeIndex = 1;
+visKarrusel(billedeIndex);
+
+function plusKarrusel(n) {
+  visKarrusel(billedeIndex += n);
+}
+
+function visKarrusel(n) {
+  var i;
+  var karrusel = document.getElementsByClassName("minBilleder");
+  if (n > karrusel.length) {billedeIndex = 1}
+  if (n < 1) {billedeIndex = karrusel.length}
+  for (i = 0; i < karrusel.length; i++) {
+    karrusel[i].style.display = "none";
+  }
+  karrusel[billedeIndex-1].style.display = "block";
+}
+
+/*læs mere karrusel SLUT */
+>>>>>>> Stashed changes
