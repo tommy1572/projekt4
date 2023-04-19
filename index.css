@@ -3,7 +3,7 @@ body {
     height:100%;
   }
 
-/* logo */
+/* logo (Emilie)*/
 .logo {
 margin-top: -90px;
 margin-left: 10px;
@@ -15,7 +15,7 @@ margin-left: 10px;
   padding: 55px;
 }
 
-/* burgermenu */ 
+/* burgermenu (Emilie) */ 
 .menubar {
 display: none;
 }
@@ -117,7 +117,7 @@ display: none;
     color: #86B0B4;
   }
 
-     /* galleri */ 
+     /* galleri (Emilie)*/ 
      body {font-family: Arial, Helvetica, sans-serif;}
      .mySlides {display: none;}
     
@@ -182,7 +182,7 @@ display: none;
       padding: 2px;
     }
 
-/*karrusel*/
+/*karrusel (Emilie)*/
 body {font-family: Arial, Helvetica, sans-serif; margin:0;}
 .mySlides {display: none}
 img {vertical-align: middle;}
@@ -253,7 +253,7 @@ img {vertical-align: middle;}
   position: absolute;
 }
 
-/* Footeren */
+/* Footeren (Tommy)*/
 footer{
   position: inherit;
   bottom: 0;
@@ -317,7 +317,7 @@ footer{
   padding: 10px;
 }
 
-    /* Mine oplysninger starter her*/
+    /* Mine oplysninger starter her (Johanna)*/
     #mineoplysninger{
       font-family: Helvetica Neue,Arial,sans-serif;
       text-align: center;
@@ -364,7 +364,7 @@ footer{
     }
       /* Mine oplysninger slutter her*/
 
-/* Læs mere boks*/
+/* Læs mere boks (Johanna)*/
 .container {
   display: flex;
   justify-content: center;
@@ -454,7 +454,7 @@ footer{
 
 @media only screen and (min-width: 950px) {
 
-  /* menubar */
+  /* menubar (Emilie)*/
     .overlay {
     display: none;
     }
@@ -582,7 +582,7 @@ footer{
     }
   }
 
-              /* kommende arrangementer start */
+              /* kommende arrangementer start (Abdi) */
 
               .container-event{
                 width: 100%;
@@ -765,3 +765,69 @@ footer{
               vertical-align: middle;
             }
       /* kommende arrangementer slut */
+
+/* Pop-up box (Emilie) */
+.bgpopContainer {
+  height:100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.pop-box {
+  height: 280px;
+  width: 500px;
+  background-color: #CCE1E0;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  display: none;
+}
+
+input {
+  width: 50%;
+  height: 30px;
+  display: block;
+  margin: 15px auto;  
+  padding: 5px;
+}
+
+.subscribe-overskrift {
+  text-decoration: bold;
+  color: #00454E;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.subscribe-tekst {
+  margin-top: -25px;
+  margin-bottom: 50px;
+  color: #00454E;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.button2 {
+  background-color: #00454E;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.closer {
+  position: absolute;
+  right: 13px;
+  top: 4px;
+  font-size: 35px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
