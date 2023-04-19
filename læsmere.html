@@ -3,74 +3,106 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>brætspilscafe</title>
         <link rel="stylesheet" href="index.css" type="text/css">
         <script src="index.js" defer></script>
         <script src="https://kit.fontawesome.com/31911ce4ba.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <main>
-          <header>
-            <!-- Logo -->
-            <div class="logo">
-              <img src="Billeder/ucleventslogo.png" alt="UCL events logo" width="95.8px" height="65.9px">
-              </div>
-                  <div id="myNav" class="overlay">
-                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                      <div class="overlay-content">
-                        <a href="index.html">Forside</a>
-                        <a href="arrangementer.html">Arrangementer</a>
-                        <div class="dropdown">
-                          <button class="dropbtn" onclick="openDropdown()">Min profil
-                            <i class="fa fa-caret-down"></i>
-                          </button>
-                          <div class="dropdown-content" class="myDropdown">
-                              <a href="minetilmeldinger.html">Mine tilmeldinger</a>
-                              <a href="mineopl.html">Mine oplysninger</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <span class="burger" style="cursor:pointer" onclick="openNav()">&#9776;</span>
-          
-              <!-- Menubar til web -->
-              <div class="menubar"> 
+        <header>
+     
+          <div class="line">
+          </div>
+  
+          <!-- Logo -->
+          <div class="logo">
+              <img src="ucleventslogo.png" alt="UCL events logo" width="119.75px" height="82.375px">
+          </div>
+  
+          <!-- Burgermenu -->
+          <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+              <div class="overlay-content"> 
                 <a href="index.html">Forside</a>
                 <a href="arrangementer.html">Arrangementer</a>
-                <div class="menudropdown">
-                  <button class="menudropbtn" onclick="openMenuDropdown()">Min profil
+                <div class="dropdown">
+                  <button class="dropbtn" onclick="openDropdown()">Min profil
                     <i class="fa fa-caret-down"></i>
-                </button>
-                  <div class="menudropdown-content" class="menuMydropdown">
+                  </button>
+                  <div class="dropdown-content" class="myDropdown">
                       <a href="minetilmeldinger.html">Mine tilmeldinger</a>
                       <a href="mineoplysninger.html">Mine oplysninger</a>
                   </div>
                 </div>
-              </div>  
+              </div>
+            </div>
+            <span class="burger" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+  
+          <!-- Menubar til web -->
+          <div class="menubar"> 
+              <a href="index.html">Forside</a>
+              <a href="arrangementer.html">Arrangementer</a>
+              <div class="menudropdown">
+                <button class="menudropbtn" onclick="openMenuDropdown()">Min profil
+                  <i class="fa fa-caret-down"></i>
+              </button>
+                <div class="menudropdown-content" class="menuMydropdown">
+                    <a href="minetilmeldinger.html">Mine tilmeldinger</a>
+                    <a href="mineoplysninger.html">Mine oplysninger</a>
+                </div>
+              </div>
+            </div> 
           </header>
+          <main>
+            <h1 id="mineoplysninger">Brætspilscafe</h1>
             <div class="container">
-                <div class="box">
+                <div class="læsmere-box">
                   <div class="dato-box">
-                    <p>29/03-23 <br> Kl. 19:00</p>
-                    <p>Adresse: Seebladsgade 1,<br> 5000 Odense C</p>
-                    <p>Pris: 20 kr</p>
+                    <p>11/04-23 <br> Kl. 14:00</p>
+                    <p>Adresse: Campus Seebladsgade 1,<br> 5000 Odense C</p>
+                    <p>Lokale: Kantinen</p>
+                    <p>Pris: Gratis</p>
                   </div>
                   <div class="beskrivelse-box">
-                    <p>Kom til verdens fedste fredagsbar på UCL! Der vil være masser af bajer fordi vi elsker bajer og det her er bare en test. Der både stå noget mere tekst så derfor skriver jeg lidt mere så det fylder og jeg aner ikke rigtig hvad der skal være på den her endnu, så jeg som sagt så skriver jeg bare en masse hahahah!</p>
-                    <button role="button">Tilmeld</button>
-                    <div class="hjerte">
-                      <i class="fa-solid fa-heart"></i> 
-                      <p>10</p>
+                    <p>Tag en studiekammeret i hånden og deltag i den hyggeligste brætspilscafe på UCL Seebladsgade. Her får du mulighed for at koble fra studiet og lektier, og se dine venner i øjnene. Brætspil er en fantastisk måde at være sammen med venner på. Om det skal være med fokus på samarbejde om en fælles sejr i Partners eller Bezzerwizzer, eller at give dine studiekammerater tæv og tage æren for dig selv i et spil Ludo, Uno, Backgammon eller andre sjove spil, som skolen stiller til rådighed. Du må selvfølgelig også altid medbringe dine egne spil, hvis du har en personlig favorit. Udover godt selskab vil der være gratis kaffe og the! Ses vi på Tirsdag klokken 14-17?</p>
+                    <div id="ikoner">
+                     <div class="deltager">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>32</span>
+                      </div>
+                      <button class="heart-btn" onclick="increaseCount()">
+                        <i class="fas fa-heart"></i>
+                        <span id="count" class="counter">0</span>
+                      </button>
+                      <button class="tilmeld-knap" role="button">Tilmeld</button>
                     </div>
                   </div>
                 </div>
-            </div>        
+            </div>
+            <div class="slideshow-container">
+              <div class="mySlides">
+                <img src="læsmere-billeder/brætspilscafe1.jpg" >
+              </div>
+              <div class="mySlides">
+                <img src="læsmere-billeder/brætspilscafe2.jpg">
+              </div>
+              <div class="mySlides">
+                <img src="læsmere-billeder/brætspilscafe3.jpg">
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>                
         </main>
         <footer>
+        <div class="footer">    
           <ul class="some">
             <li><a href="#" class="fa fa-facebook"></a></li>
             <li><a href="#" class="fa fa-instagram"></a></li>
           </ul>
-          <div class="footer-tekst">UCL Seebladsgade 1</div>
+        </div>
+          <div class="footer-tekst">
+            <p>UCL Seebladsgade 1</p>
+            </div>
         </footer>
     </body>
 </html>

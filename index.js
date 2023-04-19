@@ -172,3 +172,32 @@ function showSlides(n) {
     document.getElementById("semSelect").selectedIndex = 1;
 
   //kontaktform starter her
+
+/*hjerte START*/
+function increaseCount() {
+  var countElement = document.getElementById("count");
+  var count = parseInt(countElement.innerText);
+  countElement.innerText = count + 1;
+  document.querySelector('.heart-btn').style.color = 'red';
+}
+/*hjerte SLUT*/
+
+/*billedekarrusel (læsmere) START*/
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+/*billedekarrusel (læsmere) SLUT*/
