@@ -26,7 +26,7 @@ function openNav() {
     }
   }
 
-  /*hjerte START*/
+  /*hjerte START (Tommy)*/
 function increaseCount() {
     var countElement = document.getElementById("count");
     var count = parseInt(countElement.innerText);
@@ -35,7 +35,7 @@ function increaseCount() {
   }
   /*hjerte SLUT*/
   
-  /*læs mere karrusel START */
+  /*læs mere karrusel START (Tommy) */
   var billedeIndex = 1;
   visKarrusel(billedeIndex);
   
